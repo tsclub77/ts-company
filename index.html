@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TS Club | Indumentaria</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+  <div class="logo">TS<span>CLUB</span></div>
+
+  <button class="cart-button" onclick="abrirCarrito()">
+    🛒 Carrito <b id="contador">0</b>
+  </button>
+</header>
+
+<section class="hero">
+  <p>TS CLUB</p>
+  <h1>STREETWEAR<br>ESSENTIALS</h1>
+  <a href="#productos">VER PRODUCTOS</a>
+</section>
+
+<section class="productos" id="productos">
+  <h2>PRODUCTOS</h2>
+
+  <div class="grid" id="listaProductos"></div>
+</section>
+
+<!-- CARRITO -->
+
+<div class="carrito" id="carrito">
+
+  <div class="carrito-contenido">
+
+    <button class="cerrar" onclick="cerrarCarrito()">×</button>
+
+    <h2>Tu carrito</h2>
+
+    <div id="itemsCarrito"></div>
+
+    <div class="total">
+      Total: $<span id="total">0</span>
+    </div>
+
+    <button class="whatsapp" onclick="pedirWhatsApp()">
+      PEDIR POR WHATSAPP
+    </button>
+
+  </div>
+
+</div>
+
+<footer>
+  <h3>TS CLUB</h3>
+  <p>Streetwear & Essentials</p>
+  <p>© 2026 TS Club</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
